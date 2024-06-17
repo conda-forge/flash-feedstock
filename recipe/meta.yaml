@@ -17,6 +17,7 @@ requirements:
     - make
     - {{ compiler('c') }}  # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
+    - m2w64-toolchain  # [win]
     - {{ stdlib("c") }}
   host:
     - zlib
