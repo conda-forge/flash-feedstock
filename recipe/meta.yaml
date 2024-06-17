@@ -15,10 +15,10 @@ build:
 requirements:
   build:
     - make
-    - {{ compiler('c') }}  # [unix]
+    - {{ compiler('c') }}        # [unix]
+    - {{ stdlib('c') }}          # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
-    - m2w64-toolchain  # [win]
-    - {{ stdlib("c") }}
+    - {{ stdlib('m2w64_c') }}    # [win]
   host:
     - zlib
   run:
