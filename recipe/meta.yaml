@@ -19,6 +19,7 @@ requirements:
     - {{ stdlib('c') }}          # [unix]
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ stdlib('m2w64_c') }}    # [win]
+    - zlib                       # [win]
   host:
     - zlib
   run:
