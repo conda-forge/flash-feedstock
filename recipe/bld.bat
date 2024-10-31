@@ -1,4 +1,4 @@
-mingw32-make
+make
 if errorlevel 1 exit 1
 
 xcopy /s flash.exe %PREFIX%\bin\
