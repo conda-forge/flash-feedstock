@@ -1,3 +1,4 @@
+set CPPFLAGS="%CPPFLAGS% -I%PREFIX%\Library\include"
 make
 if errorlevel 1 exit 1
 
