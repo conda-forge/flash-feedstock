@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('m2w64_c') }}  # [win]
     - {{ stdlib('m2w64_c') }}    # [win]
     - zlib                       # [win]
+    - libzlib                    # [win]
   host:
     - zlib
   run:
