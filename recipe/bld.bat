@@ -1,4 +1,5 @@
-set CPPFLAGS=%CPPFLAGS% -I%PREFIX%\Library\include
+set CPPFLAGS=%CPPFLAGS% -I%LIBRARY_PREFIX%\include
+set LDFLAGS=%LDFLAGS% -L%LIBRARY_PREFIX%\lib
 make
 if errorlevel 1 exit 1
 
